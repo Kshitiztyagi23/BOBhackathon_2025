@@ -1,0 +1,7 @@
+torch
+transformers
+Pillow
+opencv-python
+streamlit
+plotly
+pandas

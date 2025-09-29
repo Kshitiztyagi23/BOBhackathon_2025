@@ -2,6 +2,8 @@
 
 This repository contains the code for our submission to the Bank of Baroda Zero-Trust Hackathon. Our project provides a robust solution for hybrid identity monitoring and deepfake-resistant verification, featuring a transformer-based model and an interactive web interface for video analysis.
 
+***
+
 ## 🚩 The Problem
 
 The rise of AI-generated deepfakes poses a significant threat to digital identity verification processes like video KYC (vKYC). These sophisticated fakes can convincingly impersonate real individuals, bypassing traditional security measures. The core challenge is to implement a **Zero Trust** security model where every identity assertion is continuously re-validated to prevent fraud.
@@ -14,10 +16,10 @@ We have developed a transformer-based deepfake detection model designed to be in
 
 ### Key Features:
 
-Fine-tuned Architecture:** Utilizes the `SiglipForImageClassification` model, fine-tuned to distinguish between authentic and synthetic media. 
-* [cite_start]**Vision-Language Model:** Leverages both visual patterns and contextual information for more accurate detection. [cite: 1]
-* [cite_start]**Binary Classification:** Provides clear, actionable results with confidence scores for each prediction (Real vs. Fake). [cite: 1]
-* [cite_start]**Specialized Training:** Trained on the `OpenDeepfake-Preview` dataset to recognize patterns specific to synthetic media. [cite: 1]
+* **Fine-tuned Architecture:** Utilizes the `SiglipForImageClassification` model, fine-tuned to distinguish between authentic and synthetic media.
+* **Vision-Language Model:** Leverages both visual patterns and contextual information for more accurate detection.
+* **Binary Classification:** Provides clear, actionable results with confidence scores for each prediction (Real vs. Fake).
+* **Specialized Training:** Trained on the `OpenDeepfake-Preview` dataset to recognize patterns specific to synthetic media.
 
 ***
 
@@ -25,11 +27,11 @@ Fine-tuned Architecture:** Utilizes the `SiglipForImageClassification` model, fi
 
 Our solution follows a structured pipeline to ensure high accuracy and reliability:
 
-1.  [cite_start]**Model Architecture:** Built on Google's SigLIP vision-language transformer for state-of-the-art image classification. [cite: 3]
-2.  [cite_start]**Training Data:** Fine-tuned on a dataset of approximately 20,000 real and AI-generated faces to ensure balanced performance. [cite: 3]
-3.  [cite_start]**Inference Process:** Input images are resized, normalized, and scored by the model to determine if they are real or fake. [cite: 3]
-4.  [cite_start]**Decision Logic:** Frames with scores above a set threshold trigger security flags and may require additional authentication. [cite: 4]
-5.  [cite_start]**Zero Trust Alignment:** Every identity claim is explicitly verified with each access attempt, adhering to the Zero Trust security model. [cite: 4]
+1.  **Model Architecture:** Built on Google's SigLIP vision-language transformer for state-of-the-art image classification.
+2.  **Training Data:** Fine-tuned on a dataset of approximately 20,000 real and AI-generated faces to ensure balanced performance.
+3.  **Inference Process:** Input images are resized, normalized, and scored by the model to determine if they are real or fake.
+4.  **Decision Logic:** Frames with scores above a set threshold trigger security flags and may require additional authentication.
+5.  **Zero Trust Alignment:** Every identity claim is explicitly verified with each access attempt, adhering to the Zero Trust security model.
 
 ***
 
@@ -39,11 +41,11 @@ The model was evaluated on a balanced dataset of **19,999 samples** and achieved
 
 | Metric | Fake Detection | Real Detection |
 | :--- | :--- | :--- |
-| **Precision** | [cite_start]97.18% [cite: 7, 8] | [cite_start]92.01% [cite: 7, 8] |
-| **Recall** | [cite_start]91.55% [cite: 7, 8] | [cite_start]97.34% [cite: 7, 8] |
-| **F1-Score** | [cite_start]94.28% [cite: 7, 8] | [cite_start]94.60% [cite: 7, 8] |
+| **Precision** | 97.18% | 92.01% |
+| **Recall** | 91.55% | 97.34% |
+| **F1-Score** | 94.28% | 94.60% |
 
-[cite_start]**Overall Accuracy: 94.44%** [cite: 7, 8]
+**Overall Accuracy: 94.44%**
 
 
 
@@ -108,12 +110,12 @@ This project includes an interactive web application built with Streamlit for ea
 
 Our solution is designed for broad commercial application with a flexible business model:
 
-* [cite_start]**API Monetization:** A pay-as-you-go model for deepfake detection calls, with tiered subscriptions for different usage levels. [cite: 6]
-* [cite_start]**Enterprise Licensing:** On-premises deployment, co-development partnerships, and white-label licensing for financial institutions and government agencies. [cite: 6]
-* [cite_start]**Target Markets:** [cite: 6]
-    * [cite_start]**Financial Services:** Banks, payment providers, and fintech companies. [cite: 6]
-    * [cite_start]**Telecom & Video Conferencing:** Platforms like Zoom and Microsoft Teams. [cite: 6]
-    * [cite_start]**Government & Defense:** National security and critical infrastructure protection. [cite: 6]
+* **API Monetization:** A pay-as-you-go model for deepfake detection calls, with tiered subscriptions for different usage levels.
+* **Enterprise Licensing:** On-premises deployment, co-development partnerships, and white-label licensing for financial institutions and government agencies.
+* **Target Markets:**
+    * **Financial Services:** Banks, payment providers, and fintech companies.
+    * **Telecom & Video Conferencing:** Platforms like Zoom and Microsoft Teams.
+    * **Government & Defense:** National security and critical infrastructure protection.
 
 ***
 

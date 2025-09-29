@@ -13,7 +13,7 @@ import plotly.express as px
 import pandas as pd
 
 # Configuration
-MODEL_NAME = "prithivMLmods/deepfake-detector-model-v1"
+MODEL_NAME = "mode.safetensor"
 ID2LABEL = {"0": "fake", "1": "real"}
 LABEL_IDS = tuple(sorted(ID2LABEL.keys(), key=int))
 
@@ -313,4 +313,5 @@ def main():
         """)
 
 if __name__ == "__main__":
+
     main()

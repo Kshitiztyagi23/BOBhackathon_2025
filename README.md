@@ -103,6 +103,18 @@ This project includes an interactive web application built with Streamlit for ea
     * **Detailed Data:** An expandable table with the specific scores for each frame that was processed.
 
 
+***
+
+
+### 🎥 Demonstration Videos
+
+Check out these videos to see the deepfake detector in action:
+
+* **[Demonstration 1: Real Video Analysis with complex elements for harsh testing](https://drive.google.com/file/d/1M8LUAyxiKPSc79hLbV8pCcnKoNMp4bVU/view?usp=sharing)**
+* **[Demonstration 2: Deepfake Video Analysis](https://drive.google.com/file/d/15GO0nxW0wlbHmZSWCYwsPGwQqFsIY9_8/view?usp=sharing)**
+
+
+
 
 ***
 

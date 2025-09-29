@@ -14,7 +14,7 @@ We have developed a transformer-based deepfake detection model designed to be in
 
 ### Key Features:
 
-* [cite_start]**Fine-tuned Architecture:** Utilizes the `SiglipForImageClassification` model, fine-tuned to distinguish between authentic and synthetic media. [cite: 1]
+Fine-tuned Architecture:** Utilizes the `SiglipForImageClassification` model, fine-tuned to distinguish between authentic and synthetic media. 
 * [cite_start]**Vision-Language Model:** Leverages both visual patterns and contextual information for more accurate detection. [cite: 1]
 * [cite_start]**Binary Classification:** Provides clear, actionable results with confidence scores for each prediction (Real vs. Fake). [cite: 1]
 * [cite_start]**Specialized Training:** Trained on the `OpenDeepfake-Preview` dataset to recognize patterns specific to synthetic media. [cite: 1]
